@@ -1,0 +1,194 @@
+/* .main-section {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+.button {
+    text-align: center;
+    margin: auto;
+    justify-content: center
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../assets/minimalist-forest-river-wallpaper.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    transition: 0.5s ease;
+}
+
+.click{
+    filter: blur(7px);
+}
+
+.search{
+    width: 25px;
+    position: absolute;
+    top: 40px;
+    right: 65px;
+    cursor: pointer;
+}
+
+.home{
+    width: 25px;
+    position: absolute;
+    top: 40px;
+    right: 65px;
+    cursor: pointer;
+}
+
+.weather-box{
+    height: 500px;
+    width: 300px;
+    background-image: url('../assets/18-187727_desert-wallpaper-4k.jpg');
+    border-radius: 25px;
+    transition: transform 300ms ease;
+    transform: translateZ(0) scale(1.02) perspective(1000px);
+    position: absolute;
+    top: 150px;
+    left: 630px;
+    opacity: 1;
+}
+
+.weather-box:hover{
+    transform: scale(1.1) perspective(1500px) rotateY(10deg);
+}
+
+.sun{
+    width: 150px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.deg, .disc{
+    font-size: 45px;
+    font-weight: 700;
+    color: black;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 120px;
+}
+
+.disc{
+    font-size: 30px;
+    margin-top: 180px;
+}
+
+.location_img, .location{
+    width: 15px;
+    position: absolute;
+    top: 230px;
+    left: 25%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.location{
+    width: 100%;
+    position: absolute;
+    top: 225px;
+    left: 80%;
+    transform: translateX(-50%);
+}
+
+.day, .date_first{
+    font-size: 55px;
+    color: white;
+    position: absolute;
+    bottom: 50px;
+    right: 10px;
+}
+
+.date_first{
+    font-size: 20px;
+    right: 30px;
+    bottom: 25px;
+}
+
+.pop-up{
+    width: 60%;
+    height: 380px;
+    background-image: linear-gradient(-45deg, #3660a7 0%, #0f3057 100%);
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    visibility: hidden;
+}
+
+.help{
+    visibility: visible;
+}
+
+.text{
+    font-size: 60px;
+    font-weight: 300;
+    color: rgb(54, 207, 200);
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+.input-field{
+    width: 60%;
+    padding: 17px 10px;
+    border-radius: 25px;
+    margin-top: 45px;
+    margin-left: 40px;
+    outline: none;
+    border: 2px solid rgb(54, 207, 200);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.btn{
+  width: 150px;
+  background-color: #6ddccf;
+  border: none;
+  outline: none;
+  height: 49px;
+  border-radius: 49px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #28527a;
+    box-shadow: 5px 5px #6ddccf;
+    transition: 0.5s;
+}
+
+.svg{
+    width: 250px;
+    position: absolute;
+    right: 30px;
+    bottom: 100px;
+}
+
+.close{
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    width: 35px;
+    cursor: pointer;
+}
