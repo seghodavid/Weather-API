@@ -59,6 +59,7 @@
     top: 150px;
     left: 630px;
     opacity: 1;
+    font-size: medium;
 }
 
 .weather-box:hover{
